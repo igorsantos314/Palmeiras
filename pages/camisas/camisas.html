@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<style type="text/css">
+		
+		body{
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+			display: grid;
+			place-items: center;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		#items-wrapper{
+			width: 80vw;
+		}
+
+		#items{
+			display: flex;
+
+			overflow-x: auto;
+			scroll-snap-type:  x mandatory;
+		}
+
+		.item{
+			padding-right: 25px;
+			padding-left: 25px;
+			padding-top: 20px;
+			padding-bottom: 5px;
+
+			flex: none;
+
+			width: 17%;
+			height: 170px;
+
+			scroll-snap-align: start;
+		}
+
+		.linha{
+			display: flex;
+			overflow-x: auto;
+		}
+
+		.titulo{
+			color: black;
+			background-color: rgba(46,139,87, 0.3);
+			text-align: center; 
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+
+		::-webkit-scrollbar-track {
+		    background-color: rgba(46,139,87, 0.3);
+		    
+		}
+		::-webkit-scrollbar {
+		    width: 0px;
+		    background: #F4F4F4;
+		}
+		::-webkit-scrollbar-thumb {
+		    background: rgba(46,139,87, 0.6);
+		}
+
+	</style>
+
+	
+
+	<body>
+
+		<div id="items-wrapper">
+			
+			<div class="titulo">
+				<h1> 1914 – 1970 </h1>
+			</div>
+			
+			<div id="items">
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1915-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1915-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1916.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1917-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1918.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1919-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1919-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1924.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1925.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1929-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1929-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1932-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1932-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1932-3.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1937.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1938.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1938-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1941-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1941-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1941-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1942_1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1942_2.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1951.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1953.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1955.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1958.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1959_1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1959_2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1959_3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1959_4.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1965.png"></div>
+
+			</div>
+
+		</div>
+
+		<div id="items-wrapper" style="padding-top: 50px;">
+			
+			<div class="titulo">
+				<h1> 1971 – 1991 </h1>
+			</div>
+
+			<div id="items">
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1971.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1972-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1972-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1972-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1973-1-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1973-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1974.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1977-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1977-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1978-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1978-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1978-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1981-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1981-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1983-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1983-2.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1983-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1984-7.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1985-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1986-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1987-1-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1987-2.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1987-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1987-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1989-1-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1989-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1989-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1989-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1989-5.png"></div>
+
+			</div>
+
+		</div>
+
+		<div id="items-wrapper" style="padding-top: 50px;">
+			
+			<div class="titulo">
+				<h1> 1992 – 2000 </h1>
+			</div>
+			
+			<div id="items">
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1992-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1992-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1992-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1992-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-1-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-1-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-3.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1993-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1994-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1994-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1994-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1994-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1994-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1995-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1995-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-2-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-6.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-11.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-12.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1996-13.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1997-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-3.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1998-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-4.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-8-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-9-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-11.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-12.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/1999-13.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2000-7.png"></div>
+
+			</div>
+
+		</div>
+
+		<div id="items-wrapper" style="padding-top: 50px;">
+			
+			<div class="titulo">
+				<h1> 2001 – 2010 </h1>
+			</div>
+			
+			<div id="items">
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-6-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-7.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-9-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-9-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2001-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-4.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2002-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2003-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2003-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2003-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2003-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2004-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2004-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2004-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-6.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2005-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2006-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2006-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2006-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2007-1.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2007-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2007-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2007-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-1-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-5.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-9-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2008-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-4.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-11.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-12.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2009-13.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-7.png"></div>
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2010-8.png"></div>
+
+			</div>
+
+		</div>
+
+		<div id="items-wrapper" style="padding-top: 50px;">
+			
+			<div class="titulo">
+				<h1> 2011 – 2021 </h1>
+			</div>
+			
+			<div id="items">
+				
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-8.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-11.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-12.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-13.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-14.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-15.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2011-16.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-7.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-8-.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-11.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-12.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2012-13.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-2.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-3.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-5.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2013-6-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-3.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-4.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-4-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-5.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-6.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-7-.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-8.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-9.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-10.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-11.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-12.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-13.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-13-1.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-14.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-15.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-16.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2014-17.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-01.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-02.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-03.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-04.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-05.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-06.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-08.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2015-08.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-01.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-02.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-03.png"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-04.png"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-05.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-06.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2016-14.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-01.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-02.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-03.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-04.jpeg"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-05.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-06.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-07.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-08.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2017-08.jpeg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2018a.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2018b.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2018c.jpg"></div>
+
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2019a.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2019c.jpg"></div>
+				<div class="item"><img src="https://www.palmeiras.com.br/wp-content/uploads/2019/08/2019b.jpg"></div>
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/23151551/palmeiras-linha-2019-10.png"></div>
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/22194307/03-palmeiras-uniforme-1-linha-2020-1.png"></div>
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/22194346/04-palmeiras-uniforme-2-linha-2020.png"></div>
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/06102806/WhatsApp-Image-2021-03-05-at-15.48.42.jpeg"></div>
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/06103013/WhatsApp-Image-2021-03-05-at-15.46.42.jpeg"></div>
+
+				<div class="item"><img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/06103032/WhatsApp-Image-2021-03-05-at-15.46.42-2.jpeg"></div>
+
+			</div>
+
+		</div>
+
+
+	</body>
+</html>

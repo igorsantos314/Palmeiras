@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+	</head>
+
+	<style type="text/css">
+		
+		body{
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		}
+
+		.card{
+			padding: 20px;
+			width: 150px;
+			height: 280px;
+			box-shadow: 0 0 5px 0px white;
+			position: relative;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.card:after,
+		.card:before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			transition: transform .3s ease-in-out;
+		}
+
+		.card:before{
+			border-left: 3px solid white;
+			border-right: 3px solid white;
+			transform: scaleY(0);
+		}
+
+		.card:after{
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			transform: scaleX(0);
+		}
+
+		.card:hover:before{
+			transform: scaleY(1);
+		}
+
+		.card:hover:after{
+			transform: scaleX(1);
+		}
+
+		.faixa-nome{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			background-color: #2E8B57;
+			color: white;
+		}
+
+	</style>
+
+	<body>
+
+		<div align="center">
+		<table>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04165941/Jailson-4-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								JAILSON<br>
+								Goleiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04174355/Vinicius-6.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								VINICIUS<br>
+								Goleiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04174456/Weverton-4-2.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								WEVERTON<br>
+								Goleiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/11/04165047/Alan-Empereur-5.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								ALAN EMPEREUR<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/11/04165053/Benjamin-Kuscevic-6.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								BENJAMÍN KUSCEVIC<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04165708/Gustavo-Gomez-2.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								GUSTAVO GÓMEZ<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/04165903/Henri-1.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								HENRI<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04170123/Luan-4-2.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								LUAN<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+			
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/04174043/Renan-1.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								RENAN<br>
+								Zagueiro
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04170721/Marcos-Rocha-5.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								MARCOS ROCHA<br>
+								Lateral-direito
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04170724/Mayke-6.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								MAYKE<br>
+								Lateral-direito
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04170219/Lucas-Esteves-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								LUCAS ESTEVES<br>
+								Lateral-esquerdo
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/02/04170706/Matias-Vina-5-2.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								MATÍAS VIÑA<br>
+								Lateral-esquerdo
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04174325/Victor-Luis-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								VICTOR LUIS<br>
+								Lateral-esquerdo
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/09/04164852/Alan.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								ALAN<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/10/04165244/Danilo-8.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								DANILO<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2021/03/danilo-barbosa-perfil.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								DANILO BARBOSA<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/04165300/Felipe-Melo-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								FELIPE MELO<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04165639/Gabriel-Menino-6.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								GABRIEL MENINO<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04165655/gustavo-Scarpa-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								GUSTAVO SCARPA<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04170438/Lucas-Lima-5.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								LUCAS LIMA<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04170846/Patrick-de-Paula-4.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								PATRICK DE PAULA<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04173913/Raphael-Veiga-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								RAPHAEL VEIGA<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/04170036/Zee-Rafael.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								ZÉ RAPAEL<br>
+								Meio-campista
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/11/04165238/Breno-Lopes-7.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								BRENO LOPES<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/04165316/Gabriel-Silva-1.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								GABRIEL SILVA<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04165614/Gabriel-Veron-1-5.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								GABRIEL VERON<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/02/04170156/Luan-Silva-4.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								LUAN SILVA<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/08/04170513/Luiz-Adriano-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								LUIZ ADRIANO<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2021/03/04170941/Rafael-Elias.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								RAFAEL ELIAS<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/02/04174241/Rony-6.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								RONY<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/01/04174427/Wesley-1-1.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								WESLEY<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+			<!- NOVA LINHA ->
+			<tr>
+				<td>
+					<div class="card">
+					
+						<img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/07/04174505/Willian-3.png" width="150" height="170">
+						<div class="faixa-nome">
+							<p>
+								WILLIAN<br>
+								Atacante
+							</p>
+						</div>
+					
+					</div>
+				</td>
+			</tr>
+
+		</table>
+		</div>
+
+	</body>
+</html>

@@ -4,11 +4,16 @@ body
 	background-image: url('src/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	text-decoration:none;
 }
 
 h1:hover{
 	background-color: #50c878;
+}
+
+a:link 
+{ 
+	text-decoration:none; 
 }
 
 #titulo{
@@ -65,6 +70,10 @@ a{
 #menu a:hover {
 	background: #50c878;
 	color: white;
+}
+
+a:visited {
+    color: white;
 }
 
 #container-imagem {
