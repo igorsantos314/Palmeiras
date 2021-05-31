@@ -1,0 +1,266 @@
+<html>
+
+<head>
+	<title>PALMEIRAS</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/jpg" href="src\icon.png" />
+
+</head>
+
+<style>
+	body {
+		text-decoration: none;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		margin: 0;
+	}
+
+	.imagem-menu {
+		position: fixed;
+		left: 3%;
+		top: 0.5%;
+		z-index: 11;
+	}
+
+	.titulo {
+		position: fixed;
+		top: -2%;
+		left: 8%;
+		font-size: 20;
+		color: rgb(231, 231, 231);
+		z-index: 11;
+	}
+
+	.navbar {
+		overflow: hidden;
+		background-color: rgb(30, 91, 60);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 8%;
+		z-index: 10;
+	}
+
+	.navbar a {
+		float: right;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 18px 16px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+	.navbar a:hover {
+		background: #ddd;
+		color: black;
+	}
+
+	.banner {
+		margin: 30px auto;
+		width: 400px;
+		height: 75vh;
+		border-radius: 40px;
+		box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+		cursor: pointer;
+		transition: 0.4s;
+	}
+
+	.banner .card_image {
+		width: inherit;
+		height: inherit;
+		border-radius: 30px;
+	}
+
+	.banner .card_image img {
+		width: inherit;
+		height: inherit;
+		border-radius: 40px;
+		object-fit: cover;
+	}
+
+	.banner:hover {
+		transform: scale(0.9, 0.9);
+		box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+			-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+	}
+
+	.card .card_image {
+		width: inherit;
+		height: inherit;
+		border-radius: 40px;
+	}
+
+	.card .card_image img {
+		width: inherit;
+		height: inherit;
+		border-radius: 40px;
+		object-fit: cover;
+	}
+
+	.card .card_title {
+		text-align: center;
+		border-radius: 0px 0px 40px 40px;
+		font-weight: bold;
+		font-size: 30px;
+		margin-top: -80px;
+		height: 40px;
+	}
+
+	.card:hover {
+		transform: scale(0.9, 0.9);
+		box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+	}
+
+	#banner_direita {
+		position: absolute;
+		left: 6%;
+		bottom: 4%;
+		z-index: 0;
+	}
+
+	#banner_centro {
+		position: absolute;
+		left: 16%;
+		bottom: 9%;
+		z-index: 1;
+	}
+
+	#banner_esquerda {
+		position: absolute;
+		left: 28%;
+		bottom: 4%;
+		z-index: 0;
+	}
+
+	.banner_lateral {
+		position: absolute;
+		top: 8%;
+		right: 0%;
+		z-index: 0;
+		background-color: black;
+	}
+
+	.audio {
+		position: absolute;
+		bottom: 7%;
+		right: 31%;
+		z-index: 100;
+	}
+
+	.titulo_principal{
+		position: absolute;
+		top: 8%;
+		right: 11.5%;
+		font-size: 60.8;
+		color: rgb(30, 91, 55);
+	}
+
+	.subtitulo{
+		position: absolute;
+		top: 32%;
+		right: 25%;
+		color: rgb(30, 91, 55);
+	}
+
+	.subtitulo hr{
+		color: rgb(30, 91, 55);
+	}
+
+	audio::-webkit-media-controls-panel,
+	video::-webkit-media-controls-panel {
+		background-color: rgba(30, 91, 60, 0.2);
+		color-adjust: white;
+	}
+</style>
+
+<script>
+
+	var imagens = ['banner_1.jpg', 'banner_2.jpg', 'banner_3.jpg', 'banner_4.png', 'banner_5.jfif', 'banner_6.jfif', 'banner_7.jfif'];
+
+	function slides() {
+		document.querySelector("#esquerda").src = "src/" + imagens[getRandomNumber()];
+		document.querySelector("#centro").src = "src/" + imagens[getRandomNumber()];
+		document.querySelector("#direita").src = "src/" + imagens[getRandomNumber()];
+	}
+
+	function getRandomNumber() {
+		return Math.floor(Math.random() * 7)
+	}
+
+</script>
+
+<body onload="slides()">
+
+	<div class="audio">
+		<audio controls preload autoplay>
+			<source src="audio/hino-palmeiras.mp3" type="audio/mpeg">
+			Seu navegador não suporta áudio em HTML5, atualize-o.
+		</audio>
+	</div>
+
+	<div>
+		<div class="navbar">
+			<a href="#home">CAMISAS</a>
+			<a href="#home">ESTÁDIO</a>
+			<a href="#home">ELENCO</a>
+			<a href="#home">TITULOS</a>
+			<a href="#news">HISTÓRIA</a>
+			<a href="#contact">HOME</a>
+		</div>
+
+		<div class="imagem-menu">
+			<img src="src/icon.png" alt="" width="65" height="65">
+		</div>
+	</div>
+
+	<div class="titulo">
+		<h1>
+			Sociedade Esportiva Palmeiras
+		</h1>
+	</div>
+
+	<div class="banner" id="banner_direita">
+		<div class="card_image"> 
+			<img id="direita" src="src/banner_1.jpg" />
+		</div>
+	</div>
+
+	<div class="banner" id="banner_centro">
+		<div class="card_image"> 
+			<img id="centro" src="src/banner_2.jpg" />
+		</div>
+	</div>
+
+	<div class="banner" id="banner_esquerda">
+		<div class="card_image">
+			<img id="esquerda" src="src/banner_3.jpg" />
+		</div>
+	</div>
+
+	<div class="banner_lateral">
+		<img src="src/banner_lateral.jfif" alt="" width="450px" height="864px">
+	</div>
+
+	<div class="titulo_principal">
+		<h1>
+			PALMEIRAS
+		</h1>
+	</div>
+
+	<div class="subtitulo">
+		<hr color="">
+		Talvez haverá dias em que a vitória esteja longe,<br> 
+		e haverá dias em que tomar uma goleada será algo <br> 
+		inevitável, mas com certeza eu estarei lá todos estes dias, <br> 
+		gritando, cantando e até mesmo aplaudindo, <br> 
+		porque torcedor de verdades <br>
+		Ganhando ou perdendo, está sempre torcendo!
+	</div>
+
+	<div style="position: absolute; bottom: 2%; left: 1%;">
+		<input type="button" name="ant" value="ANTERIOR" onclick="slides()">
+	</div>
+
+</body>
+
+</html>
