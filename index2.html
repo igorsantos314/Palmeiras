@@ -16,16 +16,23 @@
 
 	.imagem-menu {
 		position: fixed;
-		left: 3%;
+		left: 2%;
 		top: 0.5%;
 		z-index: 11;
+
+		background-image: url("src/icon.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		width: 6%;
+		height: 12vh;
 	}
 
 	.titulo {
 		position: fixed;
-		top: -2%;
-		left: 8%;
-		font-size: 20;
+		top: -4.5%;
+		left: 10%;
+		font-size: 3vh;
 		color: rgb(231, 231, 231);
 		z-index: 11;
 	}
@@ -45,7 +52,7 @@
 		display: block;
 		color: #f2f2f2;
 		text-align: center;
-		padding: 18px 16px;
+		padding: 1% 1%;
 		text-decoration: none;
 		font-size: 20px;
 	}
@@ -57,7 +64,7 @@
 
 	.banner {
 		margin: 30px auto;
-		width: 400px;
+		width: 21%;
 		height: 75vh;
 		border-radius: 40px;
 		box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
@@ -66,7 +73,7 @@
 	}
 
 	.banner .card_image {
-		width: inherit;
+		width: 100%;
 		height: inherit;
 		border-radius: 30px;
 	}
@@ -85,8 +92,8 @@
 	}
 
 	.card .card_image {
-		width: inherit;
-		height: inherit;
+		width: 2vw;
+		height: 5vh;
 		border-radius: 40px;
 	}
 
@@ -95,15 +102,6 @@
 		height: inherit;
 		border-radius: 40px;
 		object-fit: cover;
-	}
-
-	.card .card_title {
-		text-align: center;
-		border-radius: 0px 0px 40px 40px;
-		font-weight: bold;
-		font-size: 30px;
-		margin-top: -80px;
-		height: 40px;
 	}
 
 	.card:hover {
@@ -138,6 +136,9 @@
 		right: 0%;
 		z-index: 0;
 		background-color: black;
+
+		width: 24%;
+		height: 92%;
 	}
 
 	.audio {
@@ -149,16 +150,16 @@
 
 	.titulo_principal {
 		position: absolute;
-		top: 8%;
-		right: 11.5%;
-		font-size: 60.8;
+		top: 6%;
+		right: 8%;
+		font-size: 7.2vh;
 		color: rgb(30, 91, 55);
 	}
 
 	.subtitulo {
 		position: absolute;
 		top: 32%;
-		right: 25%;
+		right: 25.7%;
 		color: rgb(30, 91, 55);
 	}
 
@@ -182,6 +183,7 @@
 		padding-top: 0%;
 		font-size: 30;
 		width: 100%;
+		color: rgb(30, 91, 55);
 	}
 
 	.divisao h1 {
@@ -189,9 +191,28 @@
 		color: rgb(30, 91, 55);
 	}
 
-	hr {
+	.divisao_primeiro hr {
 		width: 95%;
-		color: rgb(30, 91, 55);
+	}
+
+	.contanier_botao {
+		position: absolute;
+		bottom: 30%;
+		right: 45%;
+
+		width: 5%;
+		height: 10%;
+	}
+
+	#prox {
+		background-image: url("src/prox.png");
+		background-color: transparent;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		width: 100%;
+		height: 100%;
+		border: none;
 	}
 
 	audio::-webkit-media-controls-panel,
@@ -217,11 +238,42 @@
 <script>
 
 	var imagens = ['banner_1.jpg', 'banner_2.jpg', 'banner_3.jpg', 'banner_4.png', 'banner_5.jfif', 'banner_6.jfif', 'banner_7.jfif'];
+	var pos = 0;
 
-	function slides() {
-		document.querySelector("#esquerda").src = "src/" + imagens[getRandomNumber()];
-		document.querySelector("#centro").src = "src/" + imagens[getRandomNumber()];
-		document.querySelector("#direita").src = "src/" + imagens[getRandomNumber()];
+	function setarImagens(pos_e, pos_c, pos_d) {
+		document.querySelector("#esquerda").src = "src/" + imagens[pos_e];
+		document.querySelector("#centro").src = "src/" + imagens[pos_c];
+		document.querySelector("#direita").src = "src/" + imagens[pos_d];
+	}
+
+	function nextPos(){
+		if(pos > 5){
+			pos = 0;
+		}
+
+		pos += 1;
+	}
+
+	function convertValue(valor){
+		if(valor < 0){
+			return valor * -1;
+		}
+		if(valor > 6){
+			return 0;
+		}
+		return valor;
+	}
+
+	function slides(){
+		t_array = (imagens.length-1);
+		nextPos();
+
+		d = convertValue(t_array - pos);
+		c = convertValue(t_array - pos+1);
+		e = convertValue(t_array - pos+2);
+
+		console.log(d, c, e);
+		setarImagens(d, c, e);
 	}
 
 	function getRandomNumber() {
@@ -232,25 +284,26 @@
 
 <body onload="slides()">
 
-	<div class="audio">
+	<!--
+		<div class="audio">
 		<audio controls preload>
 			<source src="audio/hino-palmeiras.mp3" type="audio/mpeg">
 			Seu navegador não suporta áudio em HTML5, atualize-o.
 		</audio>
 	</div>
+	-->
 
 	<div>
 		<div class="navbar">
-			<a href="#camisas">CAMISAS</a>
 			<a href="#">ESTÁDIO</a>
+			<a href="#camisas">CAMISAS</a>
 			<a href="#elenco">ELENCO</a>
 			<a href="#titulos">TITULOS</a>
-			<a href="#">HISTÓRIA</a>
+			<a href="#historia">HISTÓRIA</a>
 			<a href="#centro">HOME</a>
 		</div>
 
 		<div class="imagem-menu">
-			<img src="src/icon.png" alt="" width="65" height="65">
 		</div>
 	</div>
 
@@ -279,7 +332,7 @@
 	</div>
 
 	<div class="banner_lateral">
-		<img src="src/banner_lateral.jfif" alt="" width="450px" height="864px">
+		<img src="src/banner_lateral.jfif" alt="" width="100%" height="100%">
 	</div>
 
 	<div class="titulo_principal">
@@ -298,13 +351,25 @@
 		Ganhando ou perdendo, está sempre torcendo!
 	</div>
 
-	<div style="position: absolute; bottom: 2%; left: 1%;">
-		<input type="button" name="ant" value="ANTERIOR" onclick="slides()">
+	<div class="contanier_botao">
+		<button id="prox" onclick="slides()"></button>
 	</div>
 
 	<div class="divisao_primeiro">
 		<hr>
-		<h1 id="titulos">
+		<h1 id="historia">
+			HISTÓRIA
+		</h1>
+
+		<div>
+			<iframe name="pages" src="pages/historia/historia.html" frameborder="0" width="100%" height="100%">
+			</iframe>
+		</div>
+	</div>
+
+	<div class="divisao" id="titulos">
+		<hr>
+		<h1>
 			TITULOS
 		</h1>
 
@@ -314,7 +379,7 @@
 		</div>
 	</div>
 
-	<div class="divisao"  id="elenco">
+	<div class="divisao" id="elenco">
 		<hr>
 		<h1>
 			ELENCO
@@ -332,14 +397,17 @@
 			CAMISAS
 		</h1>
 
-		<div style="padding-left: 14%;" >
+		<div style="padding-left: 14%;">
 			<iframe name="pages" src="pages\camisas\camisas.html" frameborder="0" width="85.5%" height="100%">
 			</iframe>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/app.js"></script>
-	
+
+	<div class="divisao">
+		<hr>
+	</div>
 </body>
 
 </html>
